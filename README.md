@@ -1,6 +1,5 @@
 # SNI-XHTTP
 
-
 > ⚠️ **هشدار مهم:** دوستان لطفاً این پروژه رو فورک نکنید. دفعه‌ی قبل روی فورک پروژه لو رفتیم. لطفاً فقط استفاده کنید و فورک نکنید.
 
 ### 🇮🇷 راهنمای کامل فارسی — Complete Persian Setup Guide
@@ -509,17 +508,26 @@ vercel login
 
 #### دانلود فایل‌های پروژه
 
+> 🔴 **خیلی مهم — قبل از Deploy حتماً این تغییرات رو انجام بده و کل README رو کامل بخون تا به مشکل نخوری:**
+> 
+> - داخل `package.json` مقدارهای زیر رو **حتماً** با یه مقدار دلخواه عوض کن (دقیقاً مثل فایل اصلی نمونه نباشه):
+>   - `"name": "sni-xhttp"` → مثلا `"name": "my-xhttp-relay"`
+>   - `"description": "Serverless XHTTP relay for Xray/V2Ray on Vercel (Edge Runtime)"` → یه متن دلخواه/الکی
+> - داخل `vercel.json` مقدار `"name": "sni-xhttp"` رو هم با یه اسم دلخواه عوض کن.
+> 
+> این کار برای اینه که پروژه‌ی تو شبیه نسخه‌های قبلی/عمومی نباشه.
+
 **روش ۱: clone از گیت‌هاب (پیشنهادی)**
 ```bash
-git clone https://github.com/YOUR-USERNAME/vercel-xhttp-relay.git
-cd vercel-xhttp-relay
+git clone https://github.com/YOUR-USERNAME/SNI-XHTTP.git
+cd SNI-XHTTP
 ```
 
 **روش ۲: دانلود ZIP**
 
 از صفحه‌ی Release آخرین نسخه رو دانلود کن، unzip کن، و وارد پوشه شو:
 ```bash
-cd path/to/vercel-xhttp-relay
+cd path/to/SNI-XHTTP
 ```
 
 داخل پوشه باید این فایل‌ها باشن:
